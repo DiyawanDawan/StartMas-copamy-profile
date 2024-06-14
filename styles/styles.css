@@ -1,0 +1,580 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*font-family: 'Kufam', sans-serif;*/
+/*font-family: 'Nunito', sans-serif;*/
+
+:root {
+    --primary: #FFC265;
+    --background: #30beae;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+nav .nav-list {
+    display: flex;
+    list-style-type: none;
+}
+nav .nav-list .nav-item {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .nav-list .list-item a {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+nav .nav-list .list-item a:hover {
+    color: var(--primary);
+}
+
+nav .contact a{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+nav .contact a:hover{
+    color: var(--background);
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+nav .logo h1 {
+    z-index: 1;
+    color: var(--background);
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    margin-top: 3.7rem;
+    display: flex;
+    flex-direction: row;
+    position: static;
+}
+.hero .hero-brand {
+    line-height: 2rem;
+    flex: 1;
+    padding-right: 20px;
+}
+.hero .hero-brand .sub-title {
+    display: inline-block;
+    padding: 0.1rem 2.5rem;
+    color: var(--background);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #abffff;
+}
+.hero .hero-brand .titel-hero, .about-detail .about-title  {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    max-width: 645px;
+    font-family: 'Kufam', sans-serif;
+    line-height: 4rem;
+}
+.hero .hero-brand .hero-desc, .about-detail .about-dest {
+    max-width: 645px;
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 1.5rem;
+}
+
+.btn {
+    background-color: var(--primary);
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+.hero .hero-image {
+    flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    /*overflow: visible;*/
+}
+
+.hero-image .card, .about .card {
+    position: absolute;
+    overflow: visible;
+    z-index: 1;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.hero-image .card .card-img {
+    width: 23%;
+    height: auto;
+}
+.about-rating .card img {
+    width: 20%;
+}
+.about-rating .card .title .card-title {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+.about-rating .card .title .card-text {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+.hero-image .card:last-child {
+    top: 0;
+    right: 0;
+}
+.hero-image .card .title {
+    margin-left: 0.7rem;
+}
+
+.about {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.about-rating {
+    position: relative;
+    display: flex;
+    margin-right: 2rem;
+    flex-direction: column;
+}
+.about-rating, .about-detail {
+    flex: 1;
+}
+.about .card:nth-child(3) {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+}
+.about .card:nth-child(2) {
+    position: absolute;
+    bottom: 10rem;
+    right: 5rem;
+}
+.about-rating .card:nth-last-child(1){
+    position: absolute;
+    bottom: 5rem;
+    left: 34%;
+    transform: translateX(-50%);
+}
+
+.about-detail ul {
+    list-style: none;
+    padding-top: 1.5rem;
+}
+.about-detail ul li {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+
+.about-detail ul li i {
+    color: var(--background);
+    margin-right: 0.5rem;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: 2px var(--primary) solid;
+    margin-left: 1.5rem;
+    color: var(--primary);
+}
+
+.btn-light:active {
+    transition: 0.1s;
+    color: #000000;
+    background-color: var(--primary);
+}
+
+.package {
+    margin-top: 7rem;
+}
+
+.package-heading {
+    font-family: 'Kufum', sans-serif;
+    text-align: center;
+    line-height: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.package-heading .package-title {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 600px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.package-heading .package-dest {
+    max-width: 600px;
+    padding-top: 2rem;
+    line-height: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+    font-size: 1.4rem;
+}
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.package-container .card {
+    border: 2px var(--primary) solid;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 10px 7px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.package-container  .card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.package-container .card-seler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+.package-container .card-seler h5 {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.package-container .card-seler .btn-saler {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: -2rem;
+    color: #57ace8;
+    font-size: 1rem;
+    background-color: #C1FFFA;
+}
+.package-container .card-title {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Kufam', sans-serif;
+}
+.package-container .card-price {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'Kufam', sans-serif;
+}
+.package-container .card-price span {
+    color: var(--background);
+}
+.package-container .card-service {
+    margin-top: 0.7rem;
+}
+.package-container .card-service li:last-child {
+    margin-right: 0;
+}
+.package-container .card-service ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+.package-container .card-service ul li {
+    background-color: var(--background);
+    margin-right: 0.7em;
+    padding: 0.3rem 0.3rem 0.1rem 0.3rem;
+    border-radius: 0.5rem;
+}
+.package-container button {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    padding: 1rem 3rem;
+}
+.accomondation {
+    padding-top: 4rem;
+    margin: 1.5rem;
+    /*flex-direction: row;*/
+    display: flex;
+}
+.accomondation .accomondation-heading {
+    max-width: 300px;
+}
+.accomondation-heading h3 {
+    font-size: 2rem;
+    font-family: 'Kufam', sans-serif;
+}
+.accomondation-heading p {
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+.accomondation-heading .ratin {
+    background-color: #C1FFFA;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    color: #1DA599;
+}
+.accomondation-heading i {
+    color: var(--primary);
+}
+.accomondation .logo-pland img{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    width: 170px;
+}
+.ficilities {
+    margin: 1rem;
+    padding: 1.5rem 0;
+    background-color: #F3FFFE;
+}
+.ficilities h2 {
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+    font-family: 'Kufam', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ficilities .dest{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    max-width: 645px;
+    margin: auto;
+}
+.facilities-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mengatur lebar kartu */
+    gap: 20px;
+}
+
+.facilities-container .card {
+    box-shadow: 7px 10px 30px 10px rgba(0,0,0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: auto;
+    margin-top: 2rem;
+}
+
+.facilities-container .card .card-body {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.facilities-container .card i {
+    display: block;
+    background-color: #C1FFFA;
+    color: var(--background);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.facilities-container .card .card-body .title {
+    margin-left: 1rem;
+}
+
+
+.custemer-testemonial  h2{
+    font-family: 'Kufam', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    /*align-items: center;*/
+    text-align: right;
+    margin: auto;
+    max-width: 600px;
+}
+
+.custemer-testemonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custemer-testemonial button {
+    padding: 0.9rem 1.9rem;
+    border: 1px solid var(--background);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+    position: relative;
+    margin-top: 11rem;
+}
+
+.custemer-testemonial p {
+    font-family: 'Kufam', sans-serif;
+    font-size: 1.5rem;
+    padding: 0;
+    /*align-items: center;*/
+    text-align: right;
+    margin: auto;
+    max-width: 600px;
+}
+.container-testemonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 10px;
+}
+.container-testemonial .card {
+    box-shadow: 7px 10px 30px 10px rgba(0,0,0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: auto;
+    animation: slideIn 15s linear infinite;
+}
+
+.container-testemonial .card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-testemonial .card-rating-review {
+    margin-right: 20px;
+}
+
+.container-testemonial .card-rating-review img {
+    width: 70px;
+    height: 70px;
+}
+.container-testemonial .card-rating-review .rating {
+    color: var(--background);
+    background-color: #C1FFFA;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.container-testemonial .card-desc {
+    /*padding: 20px;*/
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+.container-testemonial .card-desc button {
+    background-color: #C1FFFA;
+    color: var(--background);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.container-testemonial .card-desc h3 {
+    font-size: 1.5rem;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 500;
+}
+/*.container-testemonial {*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.gallery {
+    text-align: center;
+}
+.gallery h2 {
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.gallery p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.gallery .imgae-galler {
+    float: left;
+}
+
+footer {
+    background-color: var(--background);
+    color: #ffffff;
+    padding: 3rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer .contact img{
+    width: 150px;
+    height: auto;
+}
+
+footer  .link {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+footer  .link  h3 {
+    margin-left: 1rem;
+}
+footer  .link  ul {
+    margin-left: 1rem;
+    /*text-decoration: none;*/
+}
+footer  .link  ul li  {
+    list-style: none;
+    /*color: var(--background);*/
+}
+footer  .link  ul li a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.sosial-media {
+    margin: 1rem;
+    border-top: 2px #ffffff solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosial-media .icon i {
+    background-color: #ffffff;
+    color: #00B9FF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.6rem;
+}
